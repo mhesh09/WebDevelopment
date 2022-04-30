@@ -1,0 +1,9 @@
+
+//Paste in web.php
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link') // this will do the command line job
+});
+
+
+Move to /linkstorage URL inorder to create Symbolic link for storage file.
+
