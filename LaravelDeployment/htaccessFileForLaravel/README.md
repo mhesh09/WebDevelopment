@@ -1,0 +1,5 @@
+If you want to redirect a site from http to https: Just copy below rule and paste it after RewriteEngine On
+
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
